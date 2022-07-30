@@ -10,6 +10,17 @@ python-versions = ">=3.7"
 tests = ["pytest", "pytest-asyncio", "mypy (>=0.800)"]
 
 [[package]]
+name = "babel"
+version = "2.10.3"
+description = "Internationalization utilities"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+pytz = ">=2015.7"
+
+[[package]]
 name = "brotli"
 version = "1.0.9"
 description = "Python bindings for the Brotli compression library"
@@ -68,6 +79,14 @@ optional = false
 python-versions = ">=3.6"
 
 [[package]]
+name = "pytz"
+version = "2022.1"
+description = "World timezone definitions, modern and historical"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "sqlparse"
 version = "0.4.2"
 description = "A non-validating SQL parser."
@@ -100,12 +119,16 @@ brotli = ["brotli"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "eabedc5b9963492a16f9732d915cac53d1c550b45134340a2beaa31a913b8a37"
+content-hash = "d3a3036db51b15f48c72ab00fd70f0f69a76e17ff00d397943f16d4f7a2b1656"
 
 [metadata.files]
 asgiref = [
     {file = "asgiref-3.5.2-py3-none-any.whl", hash = "sha256:1d2880b792ae8757289136f1db2b7b99100ce959b2aa57fd69dab783d05afac4"},
     {file = "asgiref-3.5.2.tar.gz", hash = "sha256:4a29362a6acebe09bf1d6640db38c1dc3d9217c68e6f9f6204d72667fc19a424"},
+]
+babel = [
+    {file = "Babel-2.10.3-py3-none-any.whl", hash = "sha256:ff56f4892c1c4bf0d814575ea23471c230d544203c7748e8c68f0089478d48eb"},
+    {file = "Babel-2.10.3.tar.gz", hash = "sha256:7614553711ee97490f732126dc077f8d0ae084ebc6a96e23db1482afabdb2c51"},
 ]
 brotli = [
     {file = "Brotli-1.0.9-cp27-cp27m-macosx_10_9_x86_64.whl", hash = "sha256:268fe94547ba25b58ebc724680609c8ee3e5a843202e9a381f6f9c5e8bdb5c70"},
@@ -240,6 +263,10 @@ psycopg2-binary = [
     {file = "psycopg2_binary-2.9.3-cp39-cp39-musllinux_1_1_x86_64.whl", hash = "sha256:99485cab9ba0fa9b84f1f9e1fef106f44a46ef6afdeec8885e0b88d0772b49e8"},
     {file = "psycopg2_binary-2.9.3-cp39-cp39-win32.whl", hash = "sha256:46f0e0a6b5fa5851bbd9ab1bc805eef362d3a230fbdfbc209f4a236d0a7a990d"},
     {file = "psycopg2_binary-2.9.3-cp39-cp39-win_amd64.whl", hash = "sha256:accfe7e982411da3178ec690baaceaad3c278652998b2c45828aaac66cd8285f"},
+]
+pytz = [
+    {file = "pytz-2022.1-py2.py3-none-any.whl", hash = "sha256:e68985985296d9a66a881eb3193b0906246245294a881e7c8afe623866ac6a5c"},
+    {file = "pytz-2022.1.tar.gz", hash = "sha256:1e760e2fe6a8163bc0b3d9a19c4f84342afa0a2affebfaa84b01b978a02ecaa7"},
 ]
 sqlparse = [
     {file = "sqlparse-0.4.2-py3-none-any.whl", hash = "sha256:48719e356bb8b42991bdbb1e8b83223757b93789c00910a616a071910ca4a64d"},
