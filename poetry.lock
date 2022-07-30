@@ -116,7 +116,7 @@ version = "4.0.6"
 description = "A high-level Python web framework that encourages rapid development and clean, pragmatic design."
 category = "main"
 optional = false
-python-versions = ">=3.8"
+python-versions = ""
 
 [package.dependencies]
 asgiref = ">=3.4.1,<4"
